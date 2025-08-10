@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, #fbc2eb, #a6c1ee);
+  transition: background 0.8s ease;
+  color: #222;
+}
+
+.container {
+  max-width: 500px;
+  margin: 30px auto 60px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+
+.search-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.search-row input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  min-width: 0;
+}
+
+.search-row button {
+  padding: 10px 16px;
+  font-size: 16px;
+  border: none;
+  background-color: #0077b6;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.search-row button:hover {
+  background-color: #005f86;
+}
+
+#detectBtn {
+  display: block;
+  margin: 0 auto 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #009688;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+#detectBtn:hover {
+  background-color: #00695c;
+}
+
+.hidden {
+  display: none;
+}
+
+#weatherInfo {
+  margin-top: 20px;
+}
+
+#icon {
+  width: 90px;
+  margin: 10px 0;
+}
+
+.forecast-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.forecast-day {
+  background: rgba(0, 123, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  width: 110px;
+  margin: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  font-size: 14px;
+}
+
+.forecast-day img {
+  width: 50px;
+  margin-bottom: 6px;
+}
+
+.history {
+  margin: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.history button {
+  background-color: #ccc;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.history button:hover {
+  background-color: #0077b6;
+  color: white;
+}

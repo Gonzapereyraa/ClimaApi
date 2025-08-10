@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clima App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌤 Clima</h1>
+    
+    <div class="search-row">
+      <input type="text" id="cityInput" placeholder="Escribe tu ciudad..." autocomplete="off" />
+      <button id="searchBtn">Buscar</button>
+    </div>
+    
+    <button id="detectBtn" class="centered-btn">Detectar Ubicación</button>
+
+    <div id="history" class="history"></div>
+
+    <div id="weatherInfo" class="hidden">
+      <h2 id="cityName"></h2>
+      <p id="localTime"></p>
+      <p id="temp"></p>
+      <p id="condition"></p>
+      <img id="icon" alt="Icono del clima" />
+
+      <h3>Pronóstico de 7 días</h3>
+      <div id="forecast" class="forecast-container"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
